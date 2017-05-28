@@ -1,10 +1,7 @@
 package com.nopcommerce;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 /**
  * @ author Jay Vaghani on 09/04/2017.
@@ -12,10 +9,10 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class LoginPage extends Ulils
 {
-    public LoginPage(WebDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver,this);
-    }
+//    public LoginPage(WebDriver driver){
+//        this.driver = driver;
+//        PageFactory.initElements(driver,this);
+//    }
 
     @FindBy(id = "Email")
     private WebElement _email;
@@ -28,10 +25,10 @@ public class LoginPage extends Ulils
 
     public void loginAsExistingUser()
     {
-        new Homepage(driver).clickOnRegistButton();;
-        new RegistrationPage(driver).registration();
-        new RegistrationPage(driver).clickOnLogoutButton();
-        new Homepage(driver).clickOnLoginButton();
+        new Homepage().clickOnRegistButton();;
+        new RegistrationPage().registration();
+        new RegistrationPage().clickOnLogoutButton();
+        new Homepage().clickOnLoginButton();
 
         sendText(_email,RegistrationPage.userName);
         sendText(_password,"205madhav");

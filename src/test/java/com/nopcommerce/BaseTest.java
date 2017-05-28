@@ -1,8 +1,9 @@
 package com.nopcommerce;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
 import java.util.concurrent.TimeUnit;
 
 
@@ -16,8 +17,9 @@ public class BaseTest extends Basepage
 
     @BeforeClass
     public void openBrowser(){
-        driver = new ChromeDriver();
-        driver.get("http://demo.nopcommerce.com/");
+        //driver = new ChromeDriver();
+        driver = new FirefoxDriver();
+        driver.get("http://demo.nopcommerce.com");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
