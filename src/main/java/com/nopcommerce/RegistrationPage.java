@@ -11,10 +11,10 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class RegistrationPage extends Ulils
 {
-    RegistrationPage(WebDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver,this);
-    }
+//    RegistrationPage(WebDriver driver){
+//        this.driver = driver;
+//        PageFactory.initElements(driver,this);
+//    }
     static String userName="";
 
     @FindBy(id = "gender-male")

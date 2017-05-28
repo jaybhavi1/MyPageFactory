@@ -12,11 +12,12 @@ public class TestSuits extends BaseTest
     RegistrationPage registrationPage;
     LoginPage loginPage;
     Ulils ulils = new Ulils();
+
     @BeforeClass
     public void beforeClass(){
-        homepage= new Homepage(driver);
-        registrationPage = new RegistrationPage(driver);
-        loginPage = new LoginPage(driver);
+        homepage= new Homepage();
+        registrationPage = new RegistrationPage();
+        loginPage = new LoginPage();
     }
 
 
