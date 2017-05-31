@@ -43,11 +43,11 @@ public class TestSuits extends BaseTest
         ulils.assertTrueContains("ico-account", "class","My account",  "User is not Login ");
     }
 
-    @Test
-    public void userShouldRegisterSuccessfully()
-    {
-        homepage.clickOnRegistButton();
-        registrationPage.registration();
-        ulils.assertTrueContains("result","class","Your registration completed","User is not register successfully");
-    }
+//     @Test
+//     public void userShouldRegisterSuccessfully()
+//     {
+//         homepage.clickOnRegistButton();
+//         registrationPage.registration();
+//         ulils.assertTrueContains("result","class","Your registration completed","User is not register successfully");
+//     }
 }
